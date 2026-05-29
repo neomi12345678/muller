@@ -1,0 +1,154 @@
+.images  img {
+    display: none;    
+    width: 75%;
+    height: auto;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + label img {
+    display: block;
+}
+.buttons {
+   margin: 5% 5%;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    align-items: center;
+}
+.buttons label {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 5px 15px;
+    
+  color: white;
+    border-radius: 5px;
+    background-color: #001A52;
+    transition: background-color 0.3s;
+    border-radius: 100%;
+   background-repeat: no-repeat;
+   display: inline block;
+   border: none;
+  width: 10%;
+  height: 55px;
+}
+/*.buttons label:hover {
+    background-color: #e0e0e0;
+}*/
+.productsgrid{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+ 
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0%;
+    padding-bottom: 5px;
+    margin-right: 5%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    padding-top: 1%;
+    background-color: #001A52 ;
+    
+}
+.tytleproducts{
+    color: #001A52;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+.tut1{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dwf41468ae/images/Muller Froop Fruit/strawberry/strawberrySwatch.png');
+}
+.tut1:hover{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dw3dfe5ae1/images/Muller Froop Fruit/strawberry/strawberrySwatchSelected.png');
+}
+.lemmon{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dw65a02fe0/images/Muller Froop Fruit/lemon/froopLemonSwatch.png');
+    
+}
+.lemmon:hover{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dw757e27a2/images/Muller Froop Fruit/lemon/froopLemonSwatchSelected.png');
+}
+.berries{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dwc11c9e37/images/Muller Froop Fruit/berries/berriesSwatch.png');
+}
+.berries:hover{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dw88401fab/images/Muller Froop Fruit/berries/berriesSwatchSelected.png');
+}
+.grapes{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dwa14e7ea8/images/Muller Froop Fruit/Grapefruit/pomelos.svg');
+}
+.grapes:hover{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dw549660fd/images/Muller%20Froop%20Fruit/Grapefruit/pomelosSelected.svg');
+}
+.kiwi{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dw296c24c7/images/Muller Simply Fruit/סימפלי קיווי 3 שומן/kiwiSwatch.svg');
+}
+.kiwi:hover{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dw513c5680/images/Muller Simply Fruit/סימפלי קיווי 3 שומן/kiwiSwatchSelected.png');
+}
+.peach{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dw809791d2/images/Muller Simply Fruit/סימפלי אפרסק 3 שומן/peachSwatch.svg');
+
+}
+.peach:hover{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dw006f2720/images/Muller Simply Fruit/סימפלי אפרסק 3 שומן/peachSwatchSelected.png');
+}
+.vanila{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dw91438524/images/Muller Froop מוקצף/פרופ מוקצף וניל/vanillaSwatch.png');
+}
+.vanila:hover{
+    background-image: url('https://www.muller-israel.co.il/on/demandware.static/-/Sites-muller-master-catalog/default/dw72acc018/images/Muller Froop מוקצף/פרופ מוקצף וניל/vanillaSwatchSelected.png');
+}
+.p3{
+    display: flex;
+    flex-direction: column;
+
+}
+@media (max-width: 768px) {
+    .productsgrid {
+        grid-template-columns: repeat(2, 1fr);
+ 
+        grid-template-rows: repeat(3, 1fr);
+       
+        margin-right: 0%;
+    }
+    .buttons{
+        width: 50%;
+        margin: auto;
+    }
+    .buttons label {
+        margin: 0 6px;
+    padding: 5px 30px;
+
+    }
+    .images  img {
+        margin-right: 12%;
+    }
+}
+@media (max-width: 480px) {
+    .productsgrid {
+        
+        grid-template-columns: 100%;
+        margin-right: 0%;
+        gap:0%
+    }
+    .buttons{
+        width: 50%;
+        margin: auto;
+    }
+    .buttons label {
+        margin: 0 6px;
+    padding: 5px 30px;
+
+    }
+    .images  img {
+        margin-right: 12%;
+    }
+    
+}
+

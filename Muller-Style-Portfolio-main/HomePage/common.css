@@ -1,0 +1,160 @@
+body{
+    direction: rtl;
+    font-family: sans-serif ;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+.uplinks{
+    display: flex;
+  align-items: center;
+font-size: 3
+0px;
+background-color: #001A52;
+width: 100%;
+justify-content: space-between;
+position: relative;
+}
+.menu{
+    justify-content: center;
+    box-sizing: border-box;  
+    width: 100%;
+    padding: 2px 20px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.logo{
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;    
+}
+a{
+    margin: 0.5%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+.downlinks
+{
+    display: flex;
+    background-color:#001A52 ;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+footer{
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+@media (max-width: 480px) {
+    .uplinks {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    
+   
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo {
+        justify-content:center;
+    }
+.hamburger{
+    margin-right: 0.5%;
+}
+   
+}
+
+
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    position: absolute; 
+    top: 15px; 
+    right: 15px; 
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #001A52;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       width: 30%;
+       
+    }
+
+    .menu a {
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+        color: #ddd;
+        text-decoration: none;
+        border-bottom: none; 
+            position: relative;
+            z-index: 10; 
+        
+        
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+
+    #menu-toggle:checked + .hamburger + .menu {
+        display: flex;
+    }
+    
+    
+}
+
+
+   

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../HomePage/common.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="uplinks">
+            <a class="logo" href="../HomePage/home.html">
+                <img src="https://www.muller-israel.co.il/on/demandware.static/-/Sites-Muller-Library/default/dwe5465f8d/muller_logo.svg" alt="Muller Logo">
+            </a>
+    
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+    
+            <div class="menu">
+                <a class="products" href="../Product/product.html">המוצרים שלנו</a>
+                <a class="about" href="../AboutUS/AbooutUS.html">מי אנחנו</a>
+                <a class="details" href="../ContactUs/contact.html">צור קשר</a>
+            </div>
+        </nav>
+    </header>
+    
+<div class="main">
+
+<form>
+    <h2>נשמח לעמוד לשרותכם</h2>
+<input placeholder="שם פרטי ומשפחה" type="text" required> 
+<br>
+<div class="inputrow">
+<input placeholder="טלפון" type="tel" pattern="[0-9]{10}" required>
+<input placeholder="אימייל" type="email" required>
+</div>
+<br>
+
+ <input placeholder="כתובת" type="text" required>
+ <br>
+ <input placeholder="ברקוד מוצר" type="text" required>
+ <br>
+ <div class="inputrow">
+
+ <input type="text" placeholder="תאריך אחרון לשימוש"  onfocus="(this.type='date')" onblur="(this.type='text')"  maxlength="2147483647" required>
+ <input placeholder="שעת ייצור" type="text" required>
+</div>
+ <br>
+
+<textarea placeholder="תוכן ההודעה"></textarea>
+<br>
+<div class="check">
+<input type="checkbox" required>
+<label>אני מאשר/ת שמירת המידע שמסרתי במאגר מידע ושימוש בו לצורך הפעילות המסחרית של קבוצת החברה המרכזית לייצור משקאות קלים בע"מ (לרבות מותגיה השונים כמפורט לעיל), וכן לאפשרות איסוף והעברת מידע לגופים שלישיים, כמו קוקיז ופיקסלים של גוגל ופייסבוק, הכל בהתאם למדיניות הפרטיות. ידוע לי שאיני חייב/ת למסור את המידע לפי חוק אך לא אוכל לקבל את השירות המבוקש ללא מסירת המידע.
+</label></div>
+<br>
+
+<input value="שלח" type="submit" >
+
+<br>
+
+</form>
+<img class="imgplate" src="https://www.muller-israel.co.il/on/demandware.static/Sites-Muller-Site/-/default/dw5070243b/images/contactUsYogurt.png">
+
+</div>
+
+    <footer>
+        <nav class="downlinks">
+            <a href="https://wa.me/972548299984">
+                <img src="https://www.muller-israel.co.il/on/demandware.static/-/Sites-Muller-Library/default/dw43edc10a/footer/whatsapp_new_logo.png">
+                  
+                </img>
+            </a>
+            <a href="https://www.instagram.com/muller_il/">
+                <img src="https://www.muller-israel.co.il/on/demandware.static/-/Sites-Muller-Library/default/dwdc9f7e6e/footer/instagram_new_logo.png">
+                  
+                </img>
+            </a>
+            <a href="https://www.facebook.com/muller.israel" >
+                <img src="https://www.muller-israel.co.il/on/demandware.static/-/Sites-Muller-Library/default/dw1fb7d7fe/footer/tiktok_new_logo.png">
+                  
+                </img>
+            </a>
+            
+        </nav>
+    </footer>
+</body>
+</html>
